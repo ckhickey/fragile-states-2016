@@ -1,0 +1,345 @@
+.country:hover{
+  stroke: #fff;
+  stroke-width: .7px;
+}
+
+#map-container {
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+  overflow: hidden;
+  height: 100%;
+  *zoom: 1;
+  *margin: 0 10%;
+}
+
+#map-legend {
+	overflow: hidden;
+	padding-bottom: 0.1em;
+	padding-left: 5.0em;
+	padding-top: 0.2em;
+  width: 45%;
+  margin: 0 0 1.5em;
+  float: right;
+}
+
+.legend-quant, .legend-text {
+	font-family: Solido;
+	text-transform: uppercase;
+	line-height: 1em;
+	padding-top: 15px;
+  width:100%;
+}
+
+.legend-quant{
+  color: #fff;
+	font-size: 0.9em;
+  font-weight: 700;
+}
+
+.legend-text {
+  font-size: 0.75em;
+}
+
+.pushleft {
+	margin-left: 8px;
+}
+
+.pushright {
+	margin-right: 8px;
+}
+
+p.sort-instructions {
+	clear: both;
+	color: #000;
+	font-size: 0.9em;
+	padding-top: 2em;
+  border-top: 5px solid #000;
+}
+
+.map-caption {
+	text-transform: uppercase;
+	float: right;
+	color: #000;
+}
+
+#map-legend .blocks-container {
+  padding-top: 3.5em;
+  height: 150px;
+}
+
+#map-legend .blocks-container div {
+	width: 11%;
+  /*width: 41px;*/
+	height: 40px;
+	float: left;
+}
+
+#map-legend .blocks-container span {
+	display: block;
+	float: left;
+}
+
+article {
+	background-color: #FCB414;
+}
+
+div#countriesByRank {
+	width: 15%; padding-right: 2%; float: left; height: 400px; overflow: hidden; margin-right: 2%; background: url('images/border-pixel.png') repeat-y top right;
+	clear: both;
+}
+
+#countryBig {
+	width: 55%; float: left; height: 210px; overflow: hidden; margin-top: 5%;
+}
+
+#countryName .ui-widget input {
+  width: 100%;
+  font-family: "Solido";
+  font-size: 0.9em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border: 0;
+  color: #cdcdcd;
+}
+
+#countryName .ui-widget .ui-autocomplete-input {
+  color: #111;
+}
+
+#countryName ul {
+  font-size: 0.7em;
+  padding-top: 20px;
+}
+
+#countryBreakdown {
+	width: 55%; float: left; height: 550px; border-top: 2px solid #cdcdcd; border-bottom: 1px solid #000; padding-top: 20px;
+}
+
+#country10Years {
+  width: 55%; float: left; height: 200px; /*padding-top: 20px;*/ margin-bottom: 2em;
+}
+
+.list-selected {
+	font-weight: bold;
+}
+
+#dataTable {
+	clear: both; width: 100%; color: #111;
+	border: none;
+	display: block;
+	margin-top: 1em;
+}
+
+#dataTable thead {
+	color: #000;
+}
+
+#dataTable tbody {
+	border: none;
+}
+
+#dataTable tr {
+	border-top: none;
+	padding: 5px 0;
+}
+
+
+#dataTable td {
+	padding: 0 0 0 2%;
+	font-size: 1.0em;
+	border-top: none;
+	font-family: Solido;
+
+}
+
+#dataTable thead tr td {
+	font-size: 0.7em;
+	font-family: Solido;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.1em;
+	cursor: pointer;
+}
+
+#dataTable thead tr td.PovertyandEconomicDecline {
+	width: 7.5%;
+	padding-left: 1%;
+}
+
+#dataTable thead tr td.Year06, #dataTable thead tr td.Year11, #dataTable thead tr td.Year16, #dataTable thead tr td.TenYearChange, #dataTable thead tr td.flag_img {
+  display: none;
+}
+
+#dataTable td.six, #dataTable td.eleven, #dataTable td.sixteen, #dataTable td.yearChange, #dataTable td.flag_img {
+  display: none;
+}
+
+#dataTable td.rank {
+	font-weight: normal;
+	 padding-left: 0 !important;
+}
+
+#dataTable td.Total {
+	padding-left: 0 !important;
+}
+
+.value{ color: #111; }
+
+.barScore{
+	position: absolute;
+	top: 308px;
+  left:7px;
+}
+
+.lineScore{
+  font-size: 0.8em;
+  opacity: 0;
+}
+
+article.wide {
+	padding-bottom: 50px;
+}
+
+
+#countryBreakdown {
+	position: relative;
+}
+
+.barContainer {
+	float: left;
+	margin: 0 0.96%;
+	height: 425px;
+	position: relative;
+	width: 6.4%;
+}
+
+.barGraph {
+	width: 100%;
+}
+
+.barIcon{
+	height: 20px;
+	width: 20px;
+	display: block;
+	background: url('images/graph-arrow.png') no-repeat top center;
+	position: absolute;
+	top: 4px;
+	right: -7px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)"; /* 0=0, 1=90, 2=180, 3=270 */
+}
+
+.barGraph .bar {
+	width: 35px;
+	background-color: #000;
+	height: 0;
+	position: absolute;
+	bottom: 120px;
+}
+
+.barLabel {
+	/*writing-mode: tb-rl;*/
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)"; /* 0=0, 1=90, 2=180, 3=270 */
+
+	text-transform: uppercase;
+	line-height: 1em;
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	display: block;
+	font-size: .9em;
+	left: -58px;
+	width: 150px;
+	padding-right: 10px;
+}
+
+.lineLabel {
+  writing-mode: tb-rl;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)"; /* 0=0, 1=90, 2=180, 3=270 */
+
+	text-transform: uppercase;
+	line-height: 1em;
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	display: block;
+	font-size: 0.9em;
+	left: -58px;
+	width: 150px;
+	padding-right: 100px;
+}
+
+#dataTable tr{ display: block; clear: both; border-bottom: 1px solid #999; zoom: 1;  }
+
+#dataTable tr:after{
+	content: '.';
+	height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+
+.rank{ width: 2%; float: left; text-align: right;}
+.name{ width: 14%; float: left; padding-left: 2%; text-align: left !important;}
+.Total {padding-left: 0; float: left; text-align: right; width: 2.5% }
+.DemographicPressures, .RefugeesandIDPs, .GroupGrievance, .HumanFlight,
+.UnevenDevelopment, .PovertyandEconomicDecline, .LegitimacyoftheState, .PublicServices, .HumanRights,
+.SecurityApparatus, .FactionalizedElites, .ExternalIntervention{ width: 6.5%; float: left; text-align: right; }
+.Year06, .Year11, .Year16, .TenYearChange{width:2%; float:left; text-align: right;}
+
+@media screen and (max-width: 768px){
+
+	.rank{ width: 15%; margin-right: 10%;}
+	.name{ width: 70%; }
+	.total{ width: 12%;}
+  #dataTable{display: table;}
+  #dataTable tr {
+    padding: 5px 30px 5px 0 !important;
+  }
+
+	.DemographicPressures, .RefugeesandIDPs, .GroupGrievance, .HumanFlight,
+	.UnevenDevelopment, .PovertyandEconomicDecline, .LegitimacyoftheState, .PublicServices, .HumanRights,
+	.SecurityApparatus, .FactionalizedElites, .ExternalIntervention, .fs_indicators{ display: none; }
+}
+
+@media screen and (min-width:769px) and (max-width: 824px){
+  #dataTable thead tr td{font-size: 0.5em;}
+}
+
+@media screen and (min-width:825px) and (max-width: 1023px){
+  #dataTable thead tr td{font-size: 0.55em;}
+}
+
+@media screen and (min-width:769px) and (max-width: 1023px){
+  #dataTable td{font-size: 0.9em;}
+}
+
+@media screen and (min-width: 1024px) and (max-width:1190px) {
+  .map-caption{font-size: 0.8em;}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1128px){
+  #countryName .ui-widget input {font-size: 0.7em;}
+  .fs_map #countryRank, .fs_map #countryScore {font-size: 4em;}
+  #dataTable thead tr td {font-size: 0.6em;}
+  .legend-quant {font-size: 0.8em;}
+  .fs_indicators h4, .fs_map .countryBreakdownLabel, .fs_map .countryRankLabel {font-size: 1.2em;}
+}
